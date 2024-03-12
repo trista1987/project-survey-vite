@@ -27,6 +27,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
 h1 {
 font-size: 24px;
 font-weight: 500;
@@ -47,7 +56,7 @@ h2 {
   font-weight: 400;
   line-height: 27px;
   letter-spacing: -0.019em;
-  text-align: left;
+  text-align: center;
   color: var(--primary-color);
 }
 
@@ -59,6 +68,8 @@ h2 span {
 p {
   padding: 10px 0;
   font-size: 16px;
+  text-align: center;
+
 }
 
 header {
@@ -77,11 +88,10 @@ main {
 
 form > label {
   padding: 40px;
+  text-align: center;
 }
 
 label > label {
-  display: flex;
-  align-items: center;
   width: 100%;
   gap: 10px;
 }
@@ -104,6 +114,7 @@ input[type="text"],
 select,
 button {
   border: 1px solid #9C9C9C;
+  text-align:center;
 }
 
 input:focus {
@@ -126,4 +137,5 @@ button {
   padding: 10px, 20px, 10px, 20px;
   background-color: var(--primary-color);
   color: white;
+
 }

@@ -18,21 +18,33 @@ export const App = () => {
     setRadioSelect(event.target.value);
   };
 
+
   const handleSubmit = (event) => {
     event.preventDefault();
     setSubmit(true);
   };
 
+  const radioAnswer1 = 'The good stuff (you know what we mean)'
+  const radioAnswer2 = 'Whatever nobody else seems to want (free candy is freecandy!)'
+  const radioAnswer3 = 'Only the orange and black ones (Halloween spirit, duh)'
+
+  const optionA = 'You heroically wrestled a rogue chocolate fountain.'
+  const optionB = 'You attempted a chocolate chip cookie dough &apos; quality check&apos; with questionable hygiene.'
+  const optionC = 'You tripped face-first into a Halloween candy piñata. 🪅 We&apos;ve all been there'
+  const optionD = 'You have a pet sloth with a mysterious chocolate addiction. Don&apos;t judge'
+
   return (
   <>
   {submited ?( 
     <>
-    <header>
+    
+      <header>
       <h1>
         Your Results are in:
         <span>TEST</span>
       </h1>
     </header>
+    <div className="container">
     <main>
       <div className="answer-box" aria-label="Your answer">
         <p>
@@ -51,16 +63,18 @@ export const App = () => {
         </p>
       </div>
     </main>
+    </div>
     </>
     ) : (
     <>
-    <header>
+    
+      <header>
       <h1>
         The Great Candy Conspiracy:
         <span>A Totally Serious Survey (Maybe)</span>
       </h1>
     </header>
-      
+    <div className="container">  
         <p aria-label="intro">
         We&apos;re here to get to the bottom of a sticky situation (pun
         intended). Help us expose the truth about candy with these highly
@@ -80,8 +94,8 @@ export const App = () => {
             aria-label="radio answer button 1"
             type="radio"
             name="radioAnswer"
-            value="radioAnswer1"
-            checked={selectedValue === "radioAnswer1"}
+            value={radioAnswer1}
+            checked={selectedValue === radioAnswer1}
             onChange={handleRadioSlection}
             id="radioAnswer"/>
             <p aria-label="Answer 1">
@@ -93,8 +107,8 @@ export const App = () => {
             aria-label="radio answer button 2"
             type="radio"
             name="radioAnswer"
-            value="radioAnswer2"
-            checked={selectedValue === "radioAnswer2"}
+            value={radioAnswer2}
+            checked={selectedValue === radioAnswer2}
             onChange={handleRadioSlection}
             id="radioAnswer"/>
             <p aria-label="Answer 2">
@@ -107,8 +121,8 @@ export const App = () => {
             aria-label="radio answer button 3"
             type="radio"
             name="radioAnswer"
-            value="radioAnswer3"
-            checked={selectedValue === "radioAnswer3"}
+            value= {radioAnswer3}
+            checked={selectedValue === radioAnswer3}
             onChange={handleRadioSlection}
             id="radioAnswer"/>
             <p aria-label="Answer 3">
@@ -124,23 +138,23 @@ export const App = () => {
             <select
               aria-expanded="false"
               name="selectedOption"
-              value={selectedOption}
+              // value={selectedOption}
               onChange={handleChange}
               id="options"
               required>
               <option value="---">---</option>
-              <option value="optionA">
+              <option value= {optionA}>
                 You heroically wrestled a rogue chocolate fountain.
               </option>
-              <option value="optionB">
+              <option value={optionB}>
                 You attempted a chocolate chip cookie dough &apos;quality
                 check&apos; with questionable hygiene.
               </option>
-              <option value="optionC">
+              <option value={optionC}>
                 You tripped face-first into a Halloween candy piñata. 🪅
                 We&apos;ve all been there
               </option>
-              <option value="optionD">
+              <option value={optionD}>
                 You have a pet sloth with a mysterious chocolate addiction.
                 Don&apos;t judge
               </option>
@@ -156,6 +170,7 @@ export const App = () => {
             <input
               type="text"
               name="text"
+              placeholder="Please write your answer here"
               value={text}
               onChange={handleInputTextChange}
               id="text"/>
@@ -166,6 +181,7 @@ export const App = () => {
           <button onClick={handleSubmit}>Submit your answers</button>
         </div>
       </form>
+    </div>
     </>
   
     )};
