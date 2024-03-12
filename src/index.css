@@ -11,11 +11,6 @@
   --lighter-color: #CCD1ED;
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -25,16 +20,16 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-}
-
+} */
 
 h1 {
 font-size: 24px;
@@ -56,20 +51,21 @@ h2 {
   font-weight: 400;
   line-height: 27px;
   letter-spacing: -0.019em;
-  text-align: center;
-  color: var(--primary-color);
 }
 
 h2 span {
   font-size: 24px;
   display: block;
+  line-height: normal;
+}
+
+h2, h3 {
+  color: var(--primary-color);
+  padding: 1rem 0 0.5rem 0;
 }
 
 p {
   padding: 10px 0;
-  font-size: 16px;
-  text-align: center;
-
 }
 
 header {
@@ -84,20 +80,28 @@ header {
 main {
   max-width: 500px;
   margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
 form > label {
-  padding: 40px;
-  text-align: center;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 label > label {
   width: 100%;
   gap: 10px;
+  display: flex;
+  align-items: baseline;
 }
 
 input[type="radio"] {
-  width: 32px;
+  flex: 0 0 5%;
 }
 
 input[type="text"],
@@ -114,7 +118,6 @@ input[type="text"],
 select,
 button {
   border: 1px solid #9C9C9C;
-  text-align:center;
 }
 
 input:focus {
@@ -138,4 +141,14 @@ button {
   background-color: var(--primary-color);
   color: white;
 
+}
+
+@media all and (min-width: 668px) {
+  * {
+    text-align: center;
+  }
+
+  label > p {
+    text-align: left;
+  }
 }
