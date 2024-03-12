@@ -118,6 +118,10 @@ input[type="radio"]:checked {
   accent-color: var(--primary-color);
 }
 
+.submit-wrapper {
+margin-top: 20px;
+}
+
 button {
   padding: 10px, 20px, 10px, 20px;
   background-color: var(--primary-color);
