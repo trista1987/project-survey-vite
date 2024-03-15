@@ -41,7 +41,7 @@ So you’ve completed the requirements? Great job! Ensure you've committed and p
 - Visualize to the user how far through the survey they are and how much is left by creating a progress bar
 - Use Regex validation for some input on your survey
 - Show different questions depending on the answer to a specific question
-- Create a multi-step form. Example 👇
+- Create a multi-step form. Example 👇good
   Show each question on its own 'page' with a continue button to progress to the next question (like how typeform does it). If you decide to split your form into sections, then one approach you could take is to try to think of these sections as a single `useState` hook which you can use to conditionally render different groups of inputs. For example, you could have some state like `const [section, setSection] = useState('firstQuestion')` and then when the user presses a button to progress, you'd use the `setSection()` function to progress them to the second question, etc. Then, in your JSX, you could conditionally render, like this:
   ```
   const Example = () => {
