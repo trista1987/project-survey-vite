@@ -45,6 +45,7 @@ export const App = () => {
             The Great Candy Conspiracy:
               <span>Your Results are in:</span>
             </h1>
+            <img src="src/assets/candy.jpg" alt="sour worm candy" />
           </header>
           <main>
             <div
@@ -75,6 +76,7 @@ export const App = () => {
       ) : (
         <>
           <header>
+          <img src="src/assets/candy.jpg" alt="sour worm candy" />
             <h1>
               The Great Candy Conspiracy:
               <span>A Totally Serious Survey (Maybe)</span>
