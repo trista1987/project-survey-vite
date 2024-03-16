@@ -30,11 +30,11 @@ export const App = () => {
 
   const optionA = "You heroically wrestled a rogue chocolate fountain.";
   const optionB =
-    "You attempted a chocolate chip cookie dough &apos; quality check&apos; with questionable hygiene.";
+    "You attempted a chocolate chip cookie dough 'quality check' with questionable hygiene.";
   const optionC =
-    "You tripped face-first into a Halloween candy piñata. 🪅 We&apos;ve all been there";
+    "You tripped face-first into a Halloween candy piñata. 🪅 We've all been there";
   const optionD =
-    "You have a pet sloth with a mysterious chocolate addiction. Don&apos;t judge";
+    "You have a pet sloth with a mysterious chocolate addiction. Don't judge";
 
   return (
     <>
