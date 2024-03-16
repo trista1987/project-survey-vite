@@ -77,7 +77,7 @@ export const App = () => {
       ) : (
         <>
           <header>
-          <img src="src/assets/candy.jpg" alt="sour worm candy" />
+          <img src={candy} alt="sour worm candy" />
             <h1>
               The Great Candy Conspiracy:
               <span>A Totally Serious Survey (Maybe)</span>
