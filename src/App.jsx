@@ -1,4 +1,4 @@
-import candy from "./assets/candy.jpg"
+import {candy} from "./assets/candy.jpg"
 import { useState } from "react";
 
 export const App = () => {
