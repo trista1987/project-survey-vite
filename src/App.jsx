@@ -29,8 +29,8 @@ export const App = () => {
   const radioAnswer3 = "Only the orange and black ones (Halloween spirit, duh)";
 
   const optionA = "You heroically wrestled a rogue chocolate fountain.";
-  const optionB =
-    "You attempted a chocolate chip cookie dough 'quality check'; with questionable hygiene.";
+  const optionB = 
+    "You attempted a chocolate chip cookie dough 'quality check' with questionable hygiene.";
   const optionC =
     "You tripped face-first into a Halloween candy piñata. 🪅 We've all been there";
   const optionD =
