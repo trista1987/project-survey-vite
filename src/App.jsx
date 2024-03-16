@@ -1,3 +1,4 @@
+import candy from "./assets/candy.jpg"
 import { useState } from "react";
 
 export const App = () => {
@@ -45,7 +46,7 @@ export const App = () => {
             The Great Candy Conspiracy:
               <span>Your Results are in:</span>
             </h1>
-            <img src="src/assets/candy.jpg" alt="sour worm candy" />
+            <img src={candy} alt="sour worm candy" />
           </header>
           <main>
             <div
